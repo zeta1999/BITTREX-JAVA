@@ -95,6 +95,10 @@ public class bittrexData {
 					& !new String(Tokens.get(a)).equals("}")) {
 				Word += Tokens.get(a);
 			}
+			
+			if (new String(Tokens.get(a)).equals("}")){
+				RecordWord = false;
+			}
 
 			if (new String(Tokens.get(a)).equals("}") & !RecordWord) {
 				if (!(Words.size() < 1)) {
