@@ -36,7 +36,7 @@ Simple ArrayList
     
     System.out.println( data.size() );
     
-    for(int b = 0; b < a.size(); b++) {
+    for(int b = 0; b < data.size(); b++) {
 	    System.out.println( a.get(b, "BaseCurrency") );
     }
     
