@@ -23,8 +23,22 @@ ACCOUNT
     //returns a string
     bittrexAPI.getBalances();
     bittrexAPI.getBalance("MARKET NAME");
+    bittrexAPI.getOrderHistory("MARKET NAME");
+    bittrexAPI.getOrder("UUID");
+    bittrexAPI.getWithdrawalHistory("MARKET NAME");
     bittrexAPI.getDepositAddress("MARKET NAME");
     bittrexAPI.Withdraw("MARKET NAME", "QUANTITY", "ADDRESS");
+```
+MARKET 
+```JAVA
+
+    bittrexAPI.setAPIKeys("APIKEY","SECRETKEY");
+    
+    //returns a string
+    bittrexAPI.buyLimit("MARKET NAME" , "QUANTITY" , "RATE");
+    bittrexAPI.sellLimit("MARKET NAME" , "QUANTITY" , "RATE");
+    bittrexAPI.cancelOrder("UUID");
+    bittrexAPI.getOpenOrders("MARKET NAME");
 ```
 
 Simple ArrayList
