@@ -142,13 +142,13 @@ public class bittrexAPI {
 	// MARKET
 	
 	public static String buyLimit(String Currency, String quantity,String rate) {
-		return BittrexRequest(API_URL + "market/buylimit?apikey=" + apiKEY + "&nonce=" + getUnixTime() + "&market" + Currency +
-				"&quantity" + quantity + "&rate" + rate, Bittrex.ACCOUNT);
+		return BittrexRequest(API_URL + "market/buylimit?apikey=" + apiKEY + "&nonce=" + getUnixTime() + "&market=" + Currency +
+				"&quantity=" + quantity + "&rate=" + rate, Bittrex.ACCOUNT);
 	}
 	
 	public static String sellLimit(String Currency, String quantity,String rate) {
-		return BittrexRequest(API_URL + "market/selllimit?apikey=" + apiKEY + "&nonce=" + getUnixTime() + "&market" + Currency +
-				"&quantity" + quantity + "&rate" + rate, Bittrex.ACCOUNT);
+		return BittrexRequest(API_URL + "market/selllimit?apikey=" + apiKEY + "&nonce=" + getUnixTime() + "&market=" + Currency +
+				"&quantity=" + quantity + "&rate=" + rate, Bittrex.ACCOUNT);
 	}
 	
 	public static String cancelOrder(String uuid) {
