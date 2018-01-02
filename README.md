@@ -104,3 +104,9 @@ Simple ArrayList
      }
     
 ```
+
+
+
+
+![](example.gif)
+
